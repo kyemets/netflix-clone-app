@@ -36,7 +36,6 @@ const SavedShows = () => {
         }
     }, [user?.email])
 
-
     const movieRef = doc(db, 'users', `${user?.email}`)
     const deleteShow = async (passedID) => {
         try {
