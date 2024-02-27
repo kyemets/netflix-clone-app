@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { UserAuth } from '../context/AuthContext'
+import { toast } from 'react-toastify'
 
 const Login = () => {
     const [email, setEmail] = useState('')
@@ -15,6 +16,16 @@ const Login = () => {
         try {
             await logIn(email, password)
             navigate('/')
+            toast('login is successful', {
+                position: 'bottom-right',
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: 'dark',
+            })
         } catch (error) {
             console.log(error)
             setError(error.message)
