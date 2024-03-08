@@ -40,7 +40,7 @@
 2. Install dependencies:
 
 	```bash
-	cd movie-app
+	cd netflix-clone-app
 	npm install
 
 3. Start the development server:
