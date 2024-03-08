@@ -35,7 +35,7 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/kyemets/movie-app.git
+   git clone https://github.com/kyemets/netflix-clone-app
 
 2. Install dependencies:
 
