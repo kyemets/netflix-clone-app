@@ -6,7 +6,6 @@ const Main = () => {
     const IMDB_URL = 'https://image.tmdb.org/t/p/original'
     const [movies, setMovies] = useState([])
 
-    // get movie from movies for main section
     const movie = movies[Math.floor(Math.random() * movies.length)]
 
     useEffect(() => {
